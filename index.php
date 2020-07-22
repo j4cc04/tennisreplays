@@ -19,8 +19,9 @@
 	<header>
 
 		<div id="logo-container">
-			<img class="margin-right-10px" src="img/white-tr.png" width="60" height="60">
-			<div id="logo"><a href="/">Tennis Replays</a>
+			
+			<div id="logo">
+			<img class="margin-right-10px" src="img/white-tr.png" width="60" height="60"><a href="/">Tennis Replays</a>
 			
 			</div>
 			
