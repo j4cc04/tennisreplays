@@ -32,7 +32,7 @@
 	<div id="content">
 
 		<section class="intro">
-			<h1>Hello, <span class="nl"></span>we are here to help you.</h1>
+			<h1>Latest Replays</h1>
 			<p>
 				We provide a way for you to be able to get the latest Tennis match Replays.
 			</p>
