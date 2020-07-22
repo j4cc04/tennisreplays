@@ -58,7 +58,7 @@ $(document).ready(function() {
 
     
     $('body').on('click', '#match_list tbody tr', function() {
-        alert("contact")
+		location.href = "mailto:tennisreplays2020@gmail.com?subject="+$(this).text()+'&body='+$(this).text();
     });
 
 

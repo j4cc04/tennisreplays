@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="css/vendor/fluidbox.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
-
-	<title>Tennis Replays</title>
+	<link rel="shortcut icon" href="img/white_tr.ico" />
+	<title>Tennis Replays - Get them now</title>
 
 </head>
 <body>
@@ -19,7 +19,8 @@
 	<header>
 
 		<div id="logo-container">
-			<div id="logo"><a href="/">Tennis Replays</a></div>
+			<div id="logo"><a class="margin-right-10px" href="/">Tennis Replays</a></div>
+			<img src="img/white_tr.png" width="60" height="60">
 		</div>
 		<nav>
 			<ul>

@@ -387,6 +387,11 @@ header #logo-container {
 header #logo-container:last-child {
   margin-right: 0;
 }
+
+.margin-right-10px {
+	margin-right: 10px;
+}
+
 @media screen and (max-width: 540px) {
   header #logo-container {
     float: left;
@@ -405,6 +410,8 @@ header #logo-container #logo {
   line-height: 60px;
   letter-spacing: -0.05em;
   float: none;
+  display: flex;
+  flex-direction: row;
 }
 header #logo-container #subtitle {
   color: #EAC435;
@@ -680,8 +687,8 @@ background-color: gray;
 }
 
 #match_list tbody tr:hover {
-    background-color: lightgray;
-	cursor: pointer;
+    background-color: lightgray !important;
+	cursor: url('img/email.png'), auto;	
 }
 
 /*# sourceMappingURL=main.css.map */
