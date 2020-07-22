@@ -687,8 +687,8 @@ background-color: gray;
 }
 
 #match_list tbody tr:hover {
-    background-color: lightgray !important;
-	cursor: url('img/email.png'), auto;	
+    background-color: black !important;
+	cursor: url('../img/email.png'), auto;	
 }
 
 /*# sourceMappingURL=main.css.map */
