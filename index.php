@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="img/favicon.ico"> 
 	<link rel="stylesheet" href="css/vendor/fluidbox.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
 
 	<title>Tennis Replays</title>
 
@@ -40,21 +41,26 @@
 		<section class="row">
 			<div class="col-full">
 				<h2>List of available matches:</h2>
-				<?php
-					$str = file_get_contents('list.json');
-					$json = json_decode($str, true);
-					foreach($json as $match){
-					echo '<div class="d-flex flex-row"><div class="col-5"><span>';
-					echo $match["p1"] . " - " . $match["p2"];
-					echo '</span></div><div class="col-3"><span>';
-					echo date("d/m/Y g:i a", strtotime($match["match_date"]));
-					echo '</span></div><div class="col-3"><span>';
-					echo $match["match_league"];
-					echo '</span></div><div class="col-1"><span>';
-						echo '->';
-					echo '</span></div></div>';
-					}
-				?> 
+				<table id="match_list">
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Player1</th>
+							<th>Player2</th>
+							<th>League</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody> 
+					<tfoot>
+						<tr>
+						<th>Date</th>
+						<th>Player1</th>
+						<th>Player2</th>
+						<th>League</th>
+						</tr>
+					</tfoot>
+				</table>
 			</div>
 		</section>
 <!--
@@ -87,6 +93,7 @@
 	</script>
 
 	<script src="js/vendor/jquery.fluidbox.min.js"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 	<script src="js/main.js"></script>
 
 <script>
